@@ -68,6 +68,9 @@
             <img id="menu_img" onclick="abrirMenu();" class="centralizar_texto" src="img/icons/menu.png" alt="">
         </div>
         <div id="logo">
+            <a href="home.php">
+                <img id="logo_img" src="img/icons/logo.png" alt="">
+            </a>
         </div>
         <?php echo($areausuario); ?>
     </div>

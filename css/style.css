@@ -37,11 +37,18 @@ textarea:focus, input:focus, select:focus {
    color:#eaeaea;
 }
 
-@media screen and (min-width: 500px){
+body{
+    background-color:#f9efe0;
+}
+
+@media screen and (min-width: 1200px){
     header{
         width:100%;
         height:100px;
-        background-color:#ffac65;
+        background: -webkit-linear-gradient(left, #ffac65 , #d89a67); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(right, #ffac65 , #d89a67); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(right, #ffac65 , #d89a67); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to right, #ffac65 , #d89a67); /* Standard syntax */
     }
 
     #menu{
@@ -74,7 +81,13 @@ textarea:focus, input:focus, select:focus {
     #logo{
         width:82%;
         height:100px;
+        text-align:center;
         float:left;
+    }
+
+    #logo img{
+        width:250px;
+        height:100px;
     }
 
     #area_usuario{
@@ -111,7 +124,10 @@ textarea:focus, input:focus, select:focus {
         position:absolute;
         overflow:hidden;
         z-index:181;
-        background-color:#ffa85f;
+        background: -webkit-linear-gradient(left, #ffac65 , #d89a67); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(right, #ffac65 , #d89a67); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(right, #ffac65 , #d89a67); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to right, #ffac65 , #d89a67); /* Standard syntax */
     }
 
     #creditos{
@@ -121,7 +137,7 @@ textarea:focus, input:focus, select:focus {
         margin-right: auto;
         margin-top: 20px;
         display: flex;
-        background-color: #ffb06d;
+        background-color: #40f7b3;
         align-items: center;
 
         font-family: 'Nunito', sans-serif;
@@ -192,10 +208,6 @@ textarea:focus, input:focus, select:focus {
         z-index:180;
         background-color: rgba(0, 0, 0, 0.28);
         display:none;
-    }
-
-    body{
-        background-color:#ffffff;
     }
 
     #esqueleto{
@@ -328,7 +340,7 @@ textarea:focus, input:focus, select:focus {
         cursor:pointer;
         border-radius: 100%;
         margin-left: 32px;
-        margin-top: 30px;
+        margin-top: 60px;
         float: left;
     }
 
@@ -356,7 +368,7 @@ textarea:focus, input:focus, select:focus {
     .titulo_pg{
         width: 100%;
         height: 81px;
-        background-color: #ffac65;
+        background-color: #f6a866;
         display: flex;
         align-items: center;
         font-family: 'Nunito', sans-serif;
@@ -399,7 +411,7 @@ textarea:focus, input:focus, select:focus {
         margin-left: 190px;
         border-radius: 100%;
         position: relative;
-        background-color: #ffac65;
+        background-color: #f6a866;
     }
 
     #botao_addfoto img{
@@ -446,7 +458,7 @@ textarea:focus, input:focus, select:focus {
         margin-left:auto;
         margin-right:auto;
         cursor:pointer;
-        background-color: #ffac65;
+        background-color: #f6a866;
         line-height:80px;
         text-align:center;
 
@@ -577,7 +589,10 @@ textarea:focus, input:focus, select:focus {
     header{
         width:100%;
         height:200px;
-        background-color:#ffac65;
+        background: -webkit-linear-gradient(left, #ffac65 , #d89a67); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(right, #ffac65 , #d89a67); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(right, #ffac65 , #d89a67); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to right, #ffac65 , #d89a67); /* Standard syntax */
     }
 
     #menu{
@@ -594,13 +609,19 @@ textarea:focus, input:focus, select:focus {
     }
 
     #logo{
-        width:60%;
+        width:67%;
         height:200px;
+        text-align:center;
         float:left;
     }
 
+    #logo img{
+        width:500px;
+        height:200px;
+    }
+
     #area_usuario{
-        width:25%;
+        width:18%;
         height:200px;
         display:flex;
         align-items:center;
@@ -618,7 +639,10 @@ textarea:focus, input:focus, select:focus {
         position:absolute;
         overflow:hidden;
         z-index:181;
-        background-color:#ffa85f;
+        background: -webkit-linear-gradient(left, #ffac65 , #d89a67); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(right, #ffac65 , #d89a67); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(right, #ffac65 , #d89a67); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to right, #ffac65 , #d89a67); /* Standard syntax */
     }
 
     .opcoes_menu, #creditos{
@@ -635,6 +659,11 @@ textarea:focus, input:focus, select:focus {
         font-size: 50px;
         color: #fff;
 
+    }
+
+    #creditos{
+        background-color:#40f7b3;
+        font-size:35px;
     }
 
     .opcoes_menu img, #imgcreditos{
@@ -670,10 +699,6 @@ textarea:focus, input:focus, select:focus {
         z-index:180;
         background-color: rgba(0, 0, 0, 0.28);
         display:none;
-    }
-
-    body{
-        background-color:#ffffff;
     }
 
     #esqueleto{
@@ -725,7 +750,7 @@ textarea:focus, input:focus, select:focus {
         height: 250px;
         border-radius: 100%;
         margin-left: 32px;
-        margin-top: 30px;
+        margin-top: 60px;
         float: left;
     }
 
@@ -753,7 +778,7 @@ textarea:focus, input:focus, select:focus {
     .titulo_pg{
         width:100%;
         height:150px;
-        background-color: #ffac65;
+        background-color: #f6a866;
         display:flex;
         align-items:center;
 
@@ -792,7 +817,7 @@ textarea:focus, input:focus, select:focus {
         margin-left: 250px;
         border-radius: 100%;
         position: relative;
-        background-color: #ffac65;
+        background-color: #f6a866;
     }
 
     #botao_addfoto img{
@@ -825,7 +850,7 @@ textarea:focus, input:focus, select:focus {
         margin-top:20px;
         margin-left:auto;
         margin-right:auto;
-        background-color: #ffac65;
+        background-color: #f6a866;
         line-height:80px;
         text-align:center;
 
