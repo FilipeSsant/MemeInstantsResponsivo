@@ -24,4 +24,8 @@
         //essa opcao so aparece qnd tem um usuario na sessao
         echo($opcaoregmeme);
     ?>
+    <div id="creditos">
+        <span class="centralizar_texto">Desenvolvido por Filipe da Silva Santos </span>
+        <img id="imgcreditos" src="img/icons/creditos.png" alt="">
+    </div>
 </div>
