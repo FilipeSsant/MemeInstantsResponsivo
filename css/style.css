@@ -1,0 +1,903 @@
+a{
+    text-decoration: none;
+    outline: none;
+}
+
+/*Serve para tirar as bordas azuis no chrome*/
+textarea:focus, input:focus, select:focus {
+    outline: 0;
+}
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+/*------------------------mudar cor do placeholder----------------------------*/
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:#eaeaea;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:#eaeaea;
+   opacity:1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:#eaeaea;
+   opacity:1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:#eaeaea;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:#eaeaea;
+}
+
+::placeholder { /* Most modern browsers support this now. */
+   color:#eaeaea;
+}
+
+@media screen and (min-width: 500px){
+    header{
+        width:100%;
+        height:100px;
+        background-color:#ffac65;
+    }
+
+    #menu{
+        width:8%;
+        height:100px;
+        display:flex;
+        cursor:pointer;
+        align-items:center;
+        float:left;
+    }
+
+    #menu img{
+        transition:0.2s;
+        -moz-transition:0.2s;
+        -webkit-transition:0.2s;
+        -o-transition:0.2s;
+        width:70px;
+        height:70px;
+    }
+
+    #menu_img:hover{
+        transition:0.2s;
+        -moz-transition:0.2s;
+        -webkit-transition:0.2s;
+        -o-transition:0.2s;
+        width:80px;
+        height:80px;
+    }
+
+    #logo{
+        width:82%;
+        height:100px;
+        float:left;
+    }
+
+    #area_usuario{
+        width:10%;
+        height:100px;
+        display:flex;
+        align-items:center;
+        float:left;
+    }
+
+    #area_usuario img{
+        transition:0.2s;
+        -moz-transition:0.2s;
+        -webkit-transition:0.2s;
+        -o-transition:0.2s;
+        width:80px;
+        height:80px;
+        margin-left: 65px;
+        border-radius:100%;
+    }
+
+    #img_user:hover{
+        transition:0.2s;
+        -moz-transition:0.2s;
+        -webkit-transition:0.2s;
+        -o-transition:0.2s;
+        width:90px;
+        height:90px;
+        margin-left: 60px;
+    }
+
+    #conteudo_menu{
+        width:0px;
+        position:absolute;
+        overflow:hidden;
+        z-index:181;
+        background-color:#ffa85f;
+    }
+
+    .opcoes_menu{
+        width: 95%;
+        height: 120px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        display: flex;
+        background-color: #ffb06d;
+        align-items: center;
+
+        font-family: 'Nunito', sans-serif;
+        font-size: 50px;
+        color: #fff;
+
+    }
+
+    .opcoes_menu img{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        right: 50px;
+    }
+
+    #btn_sair{
+        transition:0.3s;
+        -moz-transition:0.3s;
+        -webkit-transition:0.3s;
+        -o-transition:0.3s;
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        margin-left: -80px;
+        margin-top: 50px;
+        display: flex;
+        cursor:pointer;
+        align-items: center;
+        position: relative;
+        background-color: #f33c3c;
+    }
+
+    #btn_sair img{
+        width:25px;
+        height:25px;;
+        margin-left: 6px;
+    }
+
+    #btn_sair:hover{
+        transition:0.3s;
+        -moz-transition:0.3s;
+        -webkit-transition:0.3s;
+        -o-transition:0.3s;
+        background-color:#ff5555;
+        margin-top:30px;
+    }
+
+    /*Fundo Transparente*/
+    #fundo_transparente{
+        width:100%;
+        height:100%;
+        position:fixed;
+        z-index:180;
+        background-color: rgba(0, 0, 0, 0.28);
+        display:none;
+    }
+
+    body{
+        background-color:#ffffff;
+    }
+
+    #esqueleto{
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .conteudo{
+        width:55%;
+        height:auto;
+        margin-top:2%;
+        margin-left:auto;
+        margin-right:auto;
+        background-color:#f9f9f9;
+    }
+
+    .conteudo_home{
+        width: 99%;
+        height: 750px;
+        margin-bottom: 10px;
+        margin-top: 2%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #f9f9f9;
+    }
+
+    .centralizar_texto{
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .conteudo_box{
+        width:95%;
+        height:1060px;
+        text-align:center;
+        margin-top:10px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .conteudo_boxhome{
+        width:95%;
+        height:720px;
+        text-align:center;
+        margin-top:10px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .conteudo_cadastro{
+        width:49%;
+        height:780px;
+        margin-top:1%;
+        margin-left:1%;
+        background-color:#f9f9f9;
+        float:left;
+    }
+
+    .conteudo_boxaprovar{
+        width:95%;
+        height:auto;
+        text-align:center;
+        margin-top:10px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .conteudo_aprovar{
+        width:48%;
+        height:740px;
+        text-align:center;
+        margin-top:10px;
+        margin-left:auto;
+        margin-right:auto;
+        background-color:#f9f9f9;
+    }
+
+    .conteudo_rgmeme{
+        width:48%;
+        height:670px;
+        text-align:center;
+        margin-top:10px;
+        margin-left:auto;
+        margin-right:auto;
+        background-color:#f9f9f9;
+    }
+
+    .conteudo_boxrgmeme{
+        width:95%;
+        height:auto;
+        text-align:center;
+        margin-top:10px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .conteudo_login{
+        width:48%;
+        height:320px;
+        margin-top:1%;
+        margin-left:1%;
+        background-color:#f9f9f9;
+        float:left;
+    }
+
+    .conteudo_boxcadastro{
+        width:95%;
+        height:auto;
+        text-align:center;
+        margin-top:10px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .conteudo_boxlogin{
+        width:95%;
+        height:auto;
+        text-align:center;
+        margin-top:10px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .box_meme{
+        background-size:250px;
+        background-position:center;
+        width: 200px;
+        height: 200px;
+        cursor:pointer;
+        border-radius: 100%;
+        margin-left: 32px;
+        margin-top: 30px;
+        float: left;
+    }
+
+    .box_meme img{
+        width:200px;
+        height:200px;
+        border-radius: 100%;
+    }
+
+    .nome_memebox{
+        margin-right:auto;
+        margin-left:auto;
+
+        font-family: 'Nunito', sans-serif;
+        font-size: 15px;
+        color:#848181;
+    }
+
+    .box_meme:last-child{
+        margin-bottom:30px;
+    }
+
+    /*----------------------------REGISTRAR MEME------------------------------*/
+
+    .titulo_pg{
+        width: 100%;
+        height: 81px;
+        background-color: #ffac65;
+        display: flex;
+        align-items: center;
+        font-family: 'Nunito', sans-serif;
+        font-size: 25px;
+        color: #fff;
+    }
+
+    #div_foto{
+        width: 250px;
+        height: 250px;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #foto_preview{
+        width: 250px;
+        height: 250px;
+        border-radius: 100%;
+        background-color:#eaeaea;
+    }
+
+    #foto_preview img{
+        width: 250px;
+        height: 250px;
+        border-radius: 100%;
+    }
+
+    #botao_addfoto{
+        transition:0.3s;
+        -moz-transition:0.3s;
+        -webkit-transition:0.3s;
+        -o-transition:0.3s;
+        width: 90px;
+        height: 90px;
+        display:flex;
+        cursor:pointer;
+        align-items:center;
+        margin-top: -90px;
+        margin-left: 190px;
+        border-radius: 100%;
+        position: relative;
+        background-color: #ffac65;
+    }
+
+    #botao_addfoto img{
+        width: 50px;
+        height: 50px;
+        cursor:pointer;
+    }
+
+    #botao_addfoto:hover{
+        transition:0.3s;
+        -moz-transition:0.3s;
+        -webkit-transition:0.3s;
+        -o-transition:0.3s;
+        background-color:#ffaa61;
+        margin-top: -110px;
+    }
+
+    input[type="file"]{
+        display:none;
+    }
+
+    .input_texto{
+        width: 95%;
+        height: 50px;
+        margin-top: 20px;
+        text-align: center;
+        border: 0;
+        font-family: 'Nunito', sans-serif;
+        font-size: 20px;
+    }
+
+    #primeiro_input{
+        margin-top:80px;
+    }
+
+    #botao_addsom{
+        transition:0.3s;
+        -moz-transition:0.3s;
+        -webkit-transition:0.3s;
+        -o-transition:0.3s;
+        width:95%;
+        height:80px;
+        margin-top:20px;
+        margin-left:auto;
+        margin-right:auto;
+        cursor:pointer;
+        background-color: #ffac65;
+        line-height:80px;
+        text-align:center;
+
+        font-family: 'Nunito', sans-serif;
+        font-size: 25px;
+        color:#fff;
+    }
+
+    #botao_addsom:hover{
+        transition:0.3s;
+        -moz-transition:0.3s;
+        -webkit-transition:0.3s;
+        -o-transition:0.3s;
+        width:98%;
+        height:90px;
+        line-height:90px;
+    }
+
+    #bntsubmit{
+        transition:0.3s;
+        -moz-transition:0.3s;
+        -webkit-transition:0.3s;
+        -o-transition:0.3s;
+        width: 95%;
+        height: 45px;
+        margin-top: 18px;
+        border: 0;
+        cursor:pointer;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #7be48d;
+        font-family: 'Nunito', sans-serif;
+        font-size: 20px;
+        color: #fff;
+    }
+
+    #bntsubmit:hover{
+        transition:0.3s;
+        -moz-transition:0.3s;
+        -webkit-transition:0.3s;
+        -o-transition:0.3s;
+        background-color:#7af18f;
+    }
+
+
+    /*---------------------------APROVAR MEME---------------------------------*/
+    audio{
+        width:95%;
+        height:45px;
+        margin-top:20px;
+        border:0;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .div_memeap{
+        width:100%;
+        height:165px;
+        background-color:#f7f5f5;
+        border-bottom: 1px solid #e0e0e0;
+
+        font-family: 'Nunito', sans-serif;
+        font-size: 20px;
+        color:#848181;
+    }
+
+    .div_memeap:last-child{
+        border-bottom:none;
+    }
+
+    .img_memap{
+        width:20%;
+        height:165px;
+        display:flex;
+        align-items:center;
+        float:left;
+    }
+
+    .img_memap img{
+        width:150px;
+        height:150px;
+        border-radius:100%;
+    }
+
+    .nome_memeap, .data_feitoap{
+        width:80%;
+        height:80px;
+        display:flex;
+        align-items:center;
+        float:left;
+    }
+
+    .botoes_condicoes{
+        width: 100px;
+        height: auto;
+        position: absolute;
+    }
+
+    .botao_condicao{
+        transition:0.3s;
+        -moz-transition:0.3s;
+        -webkit-transition:0.3s;
+        -o-transition:0.3s;
+        width:100px;
+        height:100px;
+        display:flex;
+        align-items:center;
+    }
+
+    .botao_condicao img{
+        width:70px;
+        height:70px;
+    }
+
+    .botao_condicao:hover{
+        transition:0.3s;
+        -moz-transition:0.3s;
+        -webkit-transition:0.3s;
+        -o-transition:0.3s;
+        width:110px;
+        height:110px;
+    }
+
+}
+
+@media screen and (min-device-width: 50px) and (max-device-width: 500px) and (orientation:portrait){
+
+    header{
+        width:100%;
+        height:200px;
+        background-color:#ffac65;
+    }
+
+    #menu{
+        width:15%;
+        height:200px;
+        display:flex;
+        align-items:center;
+        float:left;
+    }
+
+    #menu img{
+        width:100px;
+        height:100px;
+    }
+
+    #logo{
+        width:60%;
+        height:200px;
+        float:left;
+    }
+
+    #area_usuario{
+        width:25%;
+        height:200px;
+        display:flex;
+        align-items:center;
+        float:left;
+    }
+
+    #area_usuario img{
+        width:150px;
+        height:150px;
+        border-radius:100%;
+    }
+
+    #conteudo_menu{
+        width:0px;
+        position:absolute;
+        overflow:hidden;
+        z-index:181;
+        background-color:#ffa85f;
+    }
+
+    .opcoes_menu{
+        width: 95%;
+        height: 120px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        display: flex;
+        background-color: #ffb06d;
+        align-items: center;
+
+        font-family: 'Nunito', sans-serif;
+        font-size: 50px;
+        color: #fff;
+
+    }
+
+    .opcoes_menu img{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        right: 50px;
+    }
+
+    #btn_sair{
+        width:90px;
+        height:90px;
+        border-radius:100%;
+        margin-left:-80px;
+        margin-top:100px;
+        display:flex;
+        align-items:center;
+        position:relative;
+        background-color:#f33c3c;
+    }
+
+    #btn_sair img{
+        width:50px;
+        height:50px;
+        margin-left: 15px;
+    }
+
+    /*Fundo Transparente*/
+    #fundo_transparente{
+        width:100%;
+        height:100%;
+        position:fixed;
+        z-index:180;
+        background-color: rgba(0, 0, 0, 0.28);
+        display:none;
+    }
+
+    body{
+        background-color:#ffffff;
+    }
+
+    #esqueleto{
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .conteudo, .conteudo_home, .conteudo_cadastro, .conteudo_login, .conteudo_rgmeme, .conteudo_aprovar{
+        width:95%;
+        height:1070px;
+        margin-top:2%;
+        margin-left:auto;
+        margin-right:auto;
+        background-color:#f9f9f9;
+    }
+
+    .conteudo_aprovar{
+        height:1000px;
+    }
+
+    .conteudo_cadastro{
+        height:1200px;
+        margin-top:50px;
+    }
+
+    .conteudo_login{
+        height:550px;
+    }
+
+    .centralizar_texto{
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .conteudo_box, .conteudo_boxhome, .conteudo_boxcadastro, .conteudo_boxlogin, .conteudo_boxrgmeme, .conteudo_boxaprovar{
+        width:95%;
+        height:1060px;
+        text-align:center;
+        margin-top:10px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .box_meme{
+        background-size:300px;
+        background-position:center;
+        width: 250px;
+        height: 250px;
+        border-radius: 100%;
+        margin-left: 32px;
+        margin-top: 30px;
+        float: left;
+    }
+
+    .box_meme img{
+        width:250px;
+        height:250px;
+        border-radius: 100%;
+    }
+
+    .nome_memebox{
+        margin-right:auto;
+        margin-left:auto;
+
+        font-family: 'Nunito', sans-serif;
+        font-size: 29px;
+        color:#848181;
+    }
+
+    .box_meme:last-child{
+        margin-bottom:30px;
+    }
+
+    /*----------------------------REGISTRAR MEME------------------------------*/
+
+    .titulo_pg{
+        width:100%;
+        height:150px;
+        background-color: #ffac65;
+        display:flex;
+        align-items:center;
+
+        font-family: 'Nunito', sans-serif;
+        font-size: 35px;
+        color:#fff;
+    }
+
+    #div_foto{
+        width: 350px;
+        height: 350px;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #foto_preview{
+        width: 350px;
+        height: 350px;
+        border-radius: 100%;
+        background-color:#eaeaea;
+    }
+
+    #foto_preview img{
+        width: 350px;
+        height: 350px;
+        border-radius: 100%;
+    }
+
+    #botao_addfoto{
+        width: 150px;
+        height: 150px;
+        display:flex;
+        align-items:center;
+        margin-top: -120px;
+        margin-left: 250px;
+        border-radius: 100%;
+        position: relative;
+        background-color: #ffac65;
+    }
+
+    #botao_addfoto img{
+        width: 80px;
+        height: 80px;
+    }
+
+    input[type="file"]{
+        display:none;
+    }
+
+    .input_texto{
+        width:95%;
+        height:80px;
+        margin-top:20px;
+        text-align:center;
+        border:0;
+
+        font-family: 'Nunito', sans-serif;
+        font-size: 35px;
+    }
+
+    #primeiro_input{
+        margin-top:80px;
+    }
+
+    #botao_addsom{
+        width:95%;
+        height:80px;
+        margin-top:20px;
+        margin-left:auto;
+        margin-right:auto;
+        background-color: #ffac65;
+        line-height:80px;
+        text-align:center;
+
+        font-family: 'Nunito', sans-serif;
+        font-size: 35px;
+        color:#fff;
+    }
+
+    #bntsubmit{
+        width:95%;
+        height:80px;
+        margin-top:20px;
+        border:0;
+        margin-left:auto;
+        margin-right:auto;
+        background-color: #7be48d;
+
+        font-family: 'Nunito', sans-serif;
+        font-size: 35px;
+        color:#fff;
+    }
+
+
+    /*---------------------------APROVAR MEME---------------------------------*/
+    audio{
+        width:95%;
+        height:45px;
+        margin-top:20px;
+        border:0;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .div_memeap{
+        width:100%;
+        height:200px;
+        background-color:#f7f5f5;
+        border-bottom: 1px solid #e0e0e0;
+
+        font-family: 'Nunito', sans-serif;
+        font-size: 35px;
+        color:#848181;
+    }
+
+    .div_memeap:last-child{
+        border-bottom:none;
+    }
+
+    .img_memap{
+        width:20%;
+        height:200px;
+        display:flex;
+        align-items:center;
+        float:left;
+    }
+
+    .img_memap img{
+        width:150px;
+        height:150px;
+        border-radius:100%;
+    }
+
+    .nome_memeap, .data_feitoap{
+        width:80%;
+        height:100px;
+        display:flex;
+        align-items:center;
+        float:left;
+    }
+
+    .botoes_condicoes{
+        width: 100px;
+        height: auto;
+        position: absolute;
+        right: 25px;
+    }
+
+    .botao_condicao{
+        width:100px;
+        height:100px;
+        display:flex;
+        align-items:center;
+    }
+
+    .botao_condicao img{
+        width:70px;
+        height:70px;
+    }
+
+}
